@@ -1,7 +1,3 @@
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
 alias ll="ls -la"
 set -o vi
 bind -m vi-command L:end-of-line
@@ -11,11 +7,6 @@ export EDITOR=vi
 
 #aliases
 alias rh="echo 'sourcing bash profile'; source ~/.bashrc"
-
-
-if [ -d /opt/loggly/web/ ]; then
-    cd /opt/loggly/web/
-fi
 
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
