@@ -30,3 +30,4 @@ set ruler
 nmap <SPACE> <SPACE>:noh<CR>
 
 set autoindent
+set backspace=indent,eol,start
