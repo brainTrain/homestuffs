@@ -37,15 +37,3 @@ PS2='> '
 PS4='+ '
 }
 proml
-
-publish () {
-  git fetch
-  if [[ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]]; then
-    return 1
-  fi  
-  npm version $1 && git push origin --tags
-}
-
-getpr () {
-  git fetch origin pull/$1/head && git checkout -b pr$1 FETCH_HEAD
-}
