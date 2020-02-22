@@ -37,3 +37,8 @@ PS2='> '
 PS4='+ '
 }
 proml
+
+CD_DIR=~/work/src/my_project/
+if [ -d $CD_DIR ]; then
+    cd $CD_DIR
+fi
