@@ -31,3 +31,9 @@ nmap <SPACE> <SPACE>:noh<CR>
 
 set autoindent
 set backspace=indent,eol,start
+
+" setting for vim-prettier, assumes you have it installed
+" if using vim8 or later you can add https://github.com/prettier/vim-prettier to
+" ~/.vim/pack/prettier/start/ using git clone and run npm or yarn install after
+let g:prettier#autoformat = 0 
+autocmd BufWritePre *.ts,*.tsx,*.jsx,*.js,*.json,*.css,*.scss,*.less,*.graphql PrettierAsync
