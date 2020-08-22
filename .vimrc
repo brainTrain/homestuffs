@@ -37,3 +37,10 @@ set backspace=indent,eol,start
 " ~/.vim/pack/prettier/start/ using git clone and run npm or yarn install after
 let g:prettier#autoformat = 0 
 autocmd BufWritePre *.ts,*.tsx,*.jsx,*.js,*.json,*.css,*.scss,*.less,*.graphql PrettierAsync
+
+" sonic pi commands for viiiiimmmmmm \\\\o////
+" need sonic pi and sonic-pi-cli installed
+let mapleader = ";" 
+
+noremap <leader>r :silent w !sonic_pi<CR>
+noremap <leader>s :call system("sonic_pi stop")<CR>
