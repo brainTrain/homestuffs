@@ -32,6 +32,13 @@ nmap <SPACE> <SPACE>:noh<CR>
 set autoindent
 set backspace=indent,eol,start
 
+" new stuffs from this nerd
+" https://www.youtube.com/watch?v=XA2WjJbmmoM
+set path+=**
+set wildignore+=**/node_modules/**
+set wildmenu
+set nocompatible
+
 " setting for vim-prettier, assumes you have it installed
 " if using vim8 or later you can add https://github.com/prettier/vim-prettier to
 " ~/.vim/pack/prettier/start/ using git clone and run npm or yarn install after
