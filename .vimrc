@@ -52,7 +52,7 @@ let mapleader = ";"
 noremap <leader>r :silent w !sonic_pi<CR>
 noremap <leader>s :call system("sonic_pi stop")<CR>
 
-" custom statusline paired down from:
+" custom statusline pared down from:
 " https://shapeshed.com/vim-statuslines/ 
 
 function! GitBranch()
