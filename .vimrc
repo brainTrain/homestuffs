@@ -72,3 +72,11 @@ set statusline+=\ %f
 set statusline+=%m
 set statusline+=%=
 set statusline+=%#CursorColumn#
+" runs Black (python auto formatter) on save
+augroup black_on_save
+  autocmd!
+  autocmd BufWritePre *.py Black
+augroup end 
+" using preview mode for Black 23.3.0 so we can get
+" some string length too long formatting for free
+let g:black_preview = 1 
