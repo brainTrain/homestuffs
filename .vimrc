@@ -36,6 +36,7 @@ set backspace=indent,eol,start
 " https://www.youtube.com/watch?v=XA2WjJbmmoM
 set path+=**
 set wildignore+=**/node_modules/**
+set wildignore+=**/env/**
 set wildmenu
 set nocompatible
 
